@@ -3,7 +3,7 @@ const buttonAdd = document.getElementById('button-add-task');
 const listTask = document.getElementById('task-list');
 
 buttonAdd.addEventListener('click', () => {
-    if(!inputUser.value) return clearAndFocus();
+    if(!inputUser.value.trim()) return clearAndFocus();
     createItemContent(inputUser.value)
     clearAndFocus();
     saveTask();
@@ -11,7 +11,7 @@ buttonAdd.addEventListener('click', () => {
 
 document.addEventListener('keypress', (e) => {
     if (e.keyCode === 13) {
-        if(!inputUser.value) return clearAndFocus();
+        if(!inputUser.value.trim()) return clearAndFocus();
         createItemContent(inputUser.value);
         clearAndFocus();
         saveTask();
