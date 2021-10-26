@@ -38,7 +38,7 @@ section.container {
     padding-left: 5px;
     height: 35px;
     font-size: 20px;
-    width: calc(100% - 90);
+    width: 60%;
 }
 
 .button-add {
